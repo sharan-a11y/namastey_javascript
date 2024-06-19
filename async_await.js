@@ -3,7 +3,14 @@ const p = new Promise((resolve,reject) => {
 
 });
 
-function getData(){
-    p.then((res) => console.log(res));
+async function handlePromise (){
+    const val = await p;
+    console.log(val);
 }
-getData();
+
+handlePromise();
+
+// function getData(){
+//     p.then((res) => console.log(res));
+// }
+// getData();
